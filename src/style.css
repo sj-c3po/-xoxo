@@ -1,0 +1,55 @@
+h1 {
+  padding: 20px;
+  margin: 0;
+}
+.container {
+  display: grid;
+}
+.container .infobox,
+.container .settings {
+  padding: 20px;
+}
+.container .infobox button,
+.container .settings button {
+  margin-top: 20px;
+}
+.container .playground {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+.container .playground button {
+  padding: 10px 0 0 0;
+  margin: 0;
+  font-size: 4em;
+  font-family: fantasy;
+}
+.container .playground button:hover {
+  background-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+}
+.container .info {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .info .player {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.container .info .player:first-child .player-img {
+  background-color: #7373ed;
+}
+.container .info .player:last-child .player-img {
+  background-color: #f15e5e;
+}
+.container .info .player-img {
+  display: inline-block;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}

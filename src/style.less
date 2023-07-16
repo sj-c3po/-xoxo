@@ -1,0 +1,68 @@
+@padding: 20px;
+@cell-size: 100px;
+
+h1 {
+    padding: @padding;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+
+    .infobox, .settings {
+        padding: @padding;
+
+        button {
+            margin-top: @padding;
+        }
+    }
+    
+    .playground {
+        padding: @padding;
+
+        display: grid;
+        grid-template-columns: repeat(3, @cell-size);
+        grid-template-rows: repeat(3, @cell-size);
+
+        button {
+            padding: 10px 0 0 0;
+            margin: 0;
+            font-size: 4em;
+            font-family: fantasy;
+
+            &:hover {
+                background-color: white;
+                border-width: 1px;
+                border-radius: 3px;
+            }
+        }
+    }
+   
+
+    .info {
+        padding: @padding;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .player {
+            padding: @padding 0;
+            display: flex;
+            align-items: center;
+
+            &:first-child .player-img {
+                background-color: rgb(115, 115, 237);
+            }
+            &:last-child .player-img {
+                background-color: rgb(241, 94, 94);
+            }
+
+            &-img {
+                display: inline-block;
+                margin-right: 20px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
